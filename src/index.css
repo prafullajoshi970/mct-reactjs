@@ -68,7 +68,7 @@ Link,h3{
 th{
  background-color: black;
  color:white;
- width:14rem;
+ width:17rem;
 }
 td{
   width:19rem; 
@@ -123,9 +123,10 @@ padding:2em
 }
 
 .userInputbutton{
-  width:4vw
+  width:2vw
 }
 
 .rightproductdetail{
   margin: 5px;
 }
+
