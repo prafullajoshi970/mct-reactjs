@@ -17,6 +17,7 @@ function CreateAccount() {
    
 
     const [data,setData] = useState([]);
+    console.log(setData);
     console.log(inpval);
 
     const getdata = (e) => {
