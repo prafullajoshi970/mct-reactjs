@@ -28,10 +28,10 @@ console.log(TitleData);
        
        <div className='Productdiv'>
         <div className='left-div-of-product '>
-            <button className='prodButton' value={"electronics"} onClick={(e)=>setInputValue(e.target.value)}>Electronics</button>
-            <button  className='prodButton' value={"jewelery"} onClick={(e)=>setInputValue(e.target.value)}>Jwelleries</button>
-            <button className='prodButton' value={"men's clothing"} onClick={(e)=>setInputValue(e.target.value)}>Men's Clothing</button>
-            <button className='prodButton' value={"women's clothing"} onClick={(e)=>setInputValue(e.target.value)}>Womens Clothing</button>
+            <button className='prodbutton' value={"electronics"} onClick={(e)=>setInputValue(e.target.value)}>Electronics</button>
+            <button  className='prodbutton' value={"jewelery"} onClick={(e)=>setInputValue(e.target.value)}>Jwelleries</button>
+            <button className='prodbutton' value={"men's clothing"} onClick={(e)=>setInputValue(e.target.value)}>Men's Clothing</button>
+            <button className='prodbutton' value={"women's clothing"} onClick={(e)=>setInputValue(e.target.value)}>Womens Clothing</button>
         </div>
         <div className='right-div-of-product'>
             <ul>
