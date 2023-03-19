@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import{Link,useNavigate} from 'react-router-dom'
 import Button from '@mui/material/Button';
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
 
 function Login() {
    
@@ -76,10 +78,22 @@ function Login() {
             <h1>Welcome Back To Pretty login</h1>
             <h4>Its Great to have You back!</h4>
             <form type="submit">
-                <label>Email</label>
-                <input type={'email'} placeholder={'enter email id'} name="email" onChange={getdata}></input>
-                <label>Password</label>
-                <input type={'password'} placeholder={'enter password'} name="password" onChange={getdata}></input>
+            <Box
+      sx={{
+        width: 350,
+        maxWidth: '100%',
+      }}
+    > <TextField fullWidth label="Email"  type={'email'} placeholder={'enter email id'} name="email" onChange={getdata}></TextField>
+               </Box> 
+               <Box
+      sx={{
+        width: 350,
+        maxWidth: '100%',
+      }}
+    >
+                <TextField fullWidth label="Password" type={'password'} placeholder={'enter password'} name="password" onChange={getdata}></TextField>
+                </Box>
+                
                 <Button type='submit' onClick={addData} variant="outlined" > Login</Button>  
             </form>
             <Button variant="outlined"><Link to={"/"}>Create Account</Link></Button>

@@ -3,6 +3,8 @@ import{Link} from 'react-router-dom'
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Button from '@mui/material/Button';
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
 function CreateAccount() {
     
     
@@ -68,12 +70,35 @@ function CreateAccount() {
             <h1>Welcome To Create Account page</h1>
             <h4>fill all Details Below to Create Account</h4>
             <form type="submit">
-            <label>Name</label>
-                <input type={'text'} placeholder={'enter Name'} name="name" onChange={getdata}></input>
-                <label>Email</label>
-                <input type={'email'} placeholder={'enter email id'} name="email" onChange={getdata}></input>
-                <label>Password</label>
-                <input type={'password'} placeholder={'enter password'} name="password" onChange={getdata}></input>
+           
+            <Box
+      sx={{
+        width: 350,
+        maxWidth: '100%',
+      }}
+    > <TextField fullWidth label="Name" id="fullWidth" placeholder={'enter Name'} name="name" onChange={getdata}></TextField>
+   </Box>
+   <Box
+      sx={{
+        width: 350,
+        maxWidth: '100%',
+      }}
+    >
+        <TextField fullWidth label="Email"  type={'email'} placeholder={'enter email id'} name="email" onChange={getdata}></TextField>
+         </Box>
+
+         <Box
+      sx={{
+        width: 350,
+        maxWidth: '100%',
+      }}
+    >
+         <TextField fullWidth label="Password" type={'password'} placeholder={'enter password'} name="password" onChange={getdata}></TextField>
+         </Box>
+             
+               
+                
+               
                 <Button type='submit' onClick={addData} variant="outlined"> Submit Details</Button>  
             </form>
             <p>Already Have Account<Link to={"/Login"} > SignUp</Link></p>
