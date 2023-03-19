@@ -1,0 +1,122 @@
+body{
+  background-color: rgba(255, 255, 255, .15);  
+
+  backdrop-filter: blur(5px);
+ 
+}
+
+.MainLogin{
+  display: flex;
+  justify-content: center;
+  font-size: small;
+  
+}
+.LeftLogin,form{
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ align-items: center;
+ margin: 0.4em;
+ 
+}
+input,button{
+  height:8vh;
+  width:15rem;
+ margin: 0.4em;
+ border-radius: 3px;
+}
+.RightLogin{
+  display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+
+.NavBar{
+  display: flex;
+  text-decoration: none;
+  justify-content: flex-end;
+  gap: 3rem;
+  background-color: black;
+
+ 
+}
+Link,h3{
+  text-decoration: none;
+  color:aliceblue;
+}
+
+.Productdiv{
+ display: flex;
+ flex-direction: row;
+ padding:2em;
+ justify-content: center;
+
+ 
+ 
+}
+.left-div-of-product{
+  color: aliceblue;
+  background-color: black;
+  width:20%;
+ text-align: center;
+
+}
+.right-div-of-product{
+  width: 80%;
+
+}
+
+th{
+ background-color: black;
+ color:white;
+ width:14rem;
+}
+td{
+  width:19rem; 
+
+}
+.Homediv{
+  background-image: url('https://images.unsplash.com/photo-1516557070061-c3d1653fa646?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8YmxhY2t8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60');
+height:25rem;
+display: flex;
+flex-direction:column;
+align-items: center;
+padding:2em
+}
+.homebutton{
+  background-color: none;
+  border:1px solid blueviolet
+}
+.LeftLogin,.RightLogin,.RightLoginimg{
+  height:28rem;
+  width:25rem;
+ border: 1px solid black;
+ border-radius: 5px;
+
+}
+
+
+.prodButton{
+  width:5rem
+}
+.productDeatilsimg{
+
+  width:15rem;
+  height:15rem;
+}
+
+.productdetailmain{
+  display: flex;
+  font-size: x-small;
+  width:38rem;
+  height:15rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.userInputbutton{
+  width:4vw
+}
+
