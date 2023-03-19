@@ -16,7 +16,7 @@ function Login() {
 
     const getdata = (e) => {
         // console.log(e.target.value);
-
+        e.preventDefault();
 
         const { value, name } = e.target;
         // console.log(value,name);

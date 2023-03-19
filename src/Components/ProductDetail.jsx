@@ -4,19 +4,19 @@ import React from 'react'
 function ProductDetail(props) {
     console.log(props)
   return (
-    <div>
+    <div >
              {/* <Nav></Nav> */}
              
         {
                 props.data.map((elem,idx)=>{
                   return(
                     <>
-                  { props.data.length-6===idx && <h2>{elem.category}</h2>}
+                  { props.data.length-6===idx && <h2 style={{background:'rgb(108, 236, 23)'}}>{elem.category} Category</h2>}
                     <div className="productdetailmain">
                     <div>
                         <img className="productDeatilsimg"src={elem.image} alt="" />
                     </div>
-                    <div>
+                    <div className='rightproductdetail'>
                        <span >Product Name
                         <p style={{color:'GrayText'}}>{elem.title}</p></span> 
                         <span>  Product Price
