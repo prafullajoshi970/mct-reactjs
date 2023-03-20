@@ -4,7 +4,7 @@ import Button from '@mui/material/Button';
 
 function Home() {
 // 2nd component with nav Bar and some information with paragraph.
-
+//this component will render after succesfull Login.
   return (
     <div>
         <Nav></Nav>

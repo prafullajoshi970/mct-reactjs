@@ -3,14 +3,16 @@ import Nav from './Nav'
 import {useState,useEffect} from 'react'
 import ProductDetail from './ProductDetail';
 function Product() {
-    // onch5ck of product user should come on this page .
-    // oneSide caagories and one side details of produt.
+    // onclick of product user should come on this page .
+    // one Side caagories and one side details of produt.
     //left side catagories and right side titles from API
     //APi-https://fakestoreapi.com/products/categories
-    //onch5ck on any on left at right side display things.
+    //onclick on any on left at right side display things.
+
  const [TitleData,setTitleData]=useState([]);
  const[InputValue,setInputValue]=useState('electronics');
-
+//InputValue is for updating  catagory and send to api
+ //use fetch property to fetch data from api 
  useEffect(() => {
   fetch(` https://fakestoreapi.com/products/category/${InputValue}`)
  .then(resp=>resp.json())

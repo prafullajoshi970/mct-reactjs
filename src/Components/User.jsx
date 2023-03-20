@@ -3,11 +3,14 @@ import Nav from './Nav'
 import { useState, useEffect } from "react";
 
 function User() {
+  //All user store in user array
   const [users, setUsers] = useState([]);
+  //All filterd users store in below array
   const [filteredUsers, setFilteredUsers] = useState([]);
+  //realtime change on click of radio buttons.
   const [selectedGender, setSelectedGender] = useState("all");
 
-
+//fetch property to fetch data from API
   useEffect(() => {
     fetch("https://randomuser.me/api/?results=40")
       .then((response) => response.json())
@@ -17,6 +20,7 @@ function User() {
       });
   },[]);
 
+  //to set value of radio buttons and filter data from it
   const handleGenderChange = (event) => {
     const gender = event.target.value;
     setSelectedGender(gender);

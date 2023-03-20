@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
     
-   
+   {/* I used React Roter Dom for traveling on any component imidiate */}
         <Routes>
         <Route path ="/" element={<CreateAccount/>}></Route>
           <Route path ="/Login" element={<Login/>}></Route>

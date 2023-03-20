@@ -2,6 +2,7 @@ import React from 'react'
 // import Nav from './Nav'
 
 function ProductDetail(props) {
+  //Detail information About products 
     console.log(props)
   return (
     <div >

@@ -8,9 +8,9 @@ import TextField from '@mui/material/TextField';
 function CreateAccount() {
     
     
-    const history = useNavigate();
+    const history = useNavigate();  //if submit form details then we should travel on Login page
 
-    const [inpval, setInpval] = useState({
+    const [inputvalue, setinputvalue] = useState({
         name: "",
         email: "",
         password: ""
@@ -20,8 +20,9 @@ function CreateAccount() {
 
     const [data,setData] = useState([]);
     console.log(setData);
-    console.log(inpval);
+    // console.log(inputvalue);
 
+     //basically we have to add input feild here for getting Onchange Data i have created getData function 
     const getdata = (e) => {
         // console.log(e.target.value);
         e.preventDefault();
@@ -30,19 +31,21 @@ function CreateAccount() {
         // console.log(value,name);
 
 
-        setInpval(() => {
+        setinputvalue(() => {
             return {
-                ...inpval,
+                ...inputvalue,
                 [name]: value
             }
         })
 
     }
-
+    //onClick of Submit button we should store all input data inside local storage and also go to Login Page for that i have created getData function.
+   
     const addData = (e) => {
-        e.preventDefault();
+       
+      e.preventDefault();
 
-        const { name, email, password } = inpval;
+        const { name, email, password } = inputvalue;
 
         if (name === "") {
             alert(' name field is requred!');
@@ -57,7 +60,7 @@ function CreateAccount() {
         } else {
             console.log("data added succesfully");
             history("/login")
-            localStorage.setItem("user",JSON.stringify([...data,inpval]));
+            localStorage.setItem("user",JSON.stringify([...data,inputvalue]));
 
         }
 
